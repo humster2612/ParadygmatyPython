@@ -22,9 +22,9 @@ def podzialPaczek(wagi, max_waga):
     return len(kursy), kursy
 
 
-wagi = [21,5,8,15,10,10,7]
+wagi = [12,7,20,5,9,10,7]
 
-max_wag = 25
+max_wag = 32
 
 licz_kurs, kursy = podzialPaczek(wagi, max_wag)
 
