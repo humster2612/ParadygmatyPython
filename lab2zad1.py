@@ -2,7 +2,7 @@ import re
 from collections import Counter
 
 
-stop_words= {"i", "a", "the", "and", "to", "in", "of", "for", "on", "at", "is", "it", "this", "that", "an", "as"}
+stop_words= {"i", "a", "the", "and","is", "it", "in", "on","for","of", "to","at","this"}
 
 def analizowanieTekstu(text):
 
