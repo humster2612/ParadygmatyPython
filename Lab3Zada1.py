@@ -14,7 +14,6 @@ class Pracownik:
 
 
 
-
 class MenedzerPracownikow:
 
     def __init__(self):
@@ -73,5 +72,49 @@ class MenedzerPracownikow:
             print(f"Pracownik o imieniu {imie} nie zostal znaleziony.")
 
 
+class MenedzerFrontend:
+    def __init__(self):
+        self.menedzer_pracownikow = MenedzerPracownikow()
+
+    def menu(self):
+        while True:
+            print("\n-------------------------------------- System Pracowników --------------------------------------")
+            print("1. Dodaj nowego pracownika do listy ")
+            print("2. Pokaż pracowników z listy ")
+            print("3. Usuń pracowników w przedziale wiekowym ")
+            print("4. Aktualizuj  wynagrodzenia pracownika według jego imienia i nazwiska ")
+            print("5. Zakończ")
+
+            wybor = input("Wybierz opcję: ")
+
+            if wybor == "1":
+                imie = input("Podaj imię i nazwisko pracownika: ")
+                wiek = int(input("Podaj wiek pracownika: "))
+                wynagrodzenie = float(input("Podaj wynagrodzenie: "))
+                pracownik = Pracownik(imie, wiek, wynagrodzenie)
+                self.menedzer_pracownikow.dodaj_pracownika(pracownik)
+                print("Pracownik został dodany.")
+            elif wybor == "2":
+                self.menedzer_pracownikow.wyswietl_pracownikow()
+            elif wybor == "3":
+                minimalny_wiek = int(input("Podaj minimalny wiek: "))
+                maksymalny_wiek = int(input("Podaj maksymalny wiek: "))
+                self.menedzer_pracownikow.usun_pracownikow_w_wieku(minimalny_wiek, maksymalny_wiek)
+                print("Pracownicy zostali usunięci.")
+            elif wybor == "4":
+                imie = input("Podaj imię i nazwisko pracownika: ")
+                nowe_wynagrodzenie = float(input("Podaj nowe wynagrodzenie: "))
+                self.menedzer_pracownikow.aktualizuj_wynagrodzenie(imie, nowe_wynagrodzenie)
+            elif wybor == "5":
+
+                break
+            else:
+                print(" Wybrałeś żłe. Spróbuj jeszcze raz.")
+
+
+
+if __name__ == "__main__":
+    frontend = MenedzerFrontend()
+    frontend.menu()
 
 
