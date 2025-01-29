@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mx64gkN57ZM=",
+  "success": true,
+  "projectFilePath": "/Users/victoriapolovyy/Desktop/f#/ParadygmatyPython/FSharpLab6/FSharpLab6.fsproj",
+  "expectedPackageFiles": [
+    "/Users/victoriapolovyy/.nuget/packages/fsharp.core/8.0.400-beta.24280.1/fsharp.core.8.0.400-beta.24280.1.nupkg.sha512"
+  ],
+  "logs": []
+}
