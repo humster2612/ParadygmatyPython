@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("FSharpLab8")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d5d08a2f1187f1de742003927d71ce854cfca85")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b26d21008912f0fd51b1839defebb277c3e3c5f")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("FSharpLab8")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("FSharpLab8")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

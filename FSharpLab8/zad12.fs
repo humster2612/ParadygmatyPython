@@ -8,3 +8,5 @@ let partition predicate list =
         | Node(value, next) ->
             partitionRec next yesAcc (Node(value, noAcc))
     partitionRec list.Head Empty Empty
+
+
