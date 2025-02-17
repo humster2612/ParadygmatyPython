@@ -65,7 +65,7 @@ family_members = [
 ]
 
 chores = [
-    Chore("Sprzątanie", 3), 
+    Chore("Sprzątanie", 2), 
     Chore("Gotowanie", 4),   
     Chore("Zakupy", 6),     
 ]
